@@ -1,0 +1,35 @@
+[
+  {
+    "manufactorer": "Ford",
+    "model": "Mustang",
+    "year": 1965,
+    "color": "Rojo",
+    "patente": "abc 123",
+    "speed": 0,
+    "radio": false,
+    "volume": 11,
+    "isOn": false
+  },
+  {
+    "manufactorer": "Ford",
+    "model": "Ka",
+    "year": 2021,
+    "color": "Blanco",
+    "patente": "abc 124",
+    "speed": 0,
+    "radio": false,
+    "volume": 11,
+    "isOn": false
+  },
+  {
+    "manufactorer": "Chevrolet",
+    "model": "Corsa",
+    "year": 2005,
+    "color": "Champagne",
+    "patente": "tbc 710",
+    "speed": 0,
+    "radio": false,
+    "volume": 11,
+    "isOn": false
+  }
+]
