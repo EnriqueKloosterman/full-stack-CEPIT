@@ -17,7 +17,7 @@ export class gestorAutos{
         
     }
     //* obtiene un auto dellistado a partir de la patente
-    getCars(patente: any ) {
+    getCar(patente: any ) {
         const carList = this.cars.find(car => car.getPatente() === patente)
         console.table(carList);        
         return carList;        
@@ -63,6 +63,6 @@ const carList = getCars('garage');
 const gestor =  new gestorAutos(carList);
 // gestor.addCars('Dodge', 'Charger', 1963, 'Naranja', 'GRA L01',0, false, 11, false);
 // gestor.modifyCar('tbc 710', new Auto('Chevrolet','Corsa', 2005,'Azul','tbc 710', 0, false, 11, false));
-gestor.getCars('tbc 710');
+gestor.getCar('tbc 710');
 // gestor.deleteCar('GRA L01');
 console.table(carList)
