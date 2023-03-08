@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "El Señor de los Anillos, La comunidad del Anillo",
+    "autor": "JRR Tolkien",
+    "genero": "fantasia",
+    "paginas": 567,
+    "editorial": "Minotauro",
+    "idioma": "español"
+  },
+  {
+    "nombre": "El Honor del Samurai",
+    "autor": "Takashi Matsuoka",
+    "genero": "epoca",
+    "paginas": 443,
+    "editorial": "Ediciones B",
+    "idioma": "español"
+  },
+  {
+    "nombre": "Cell",
+    "autor": "Stephen King",
+    "genero": "terror",
+    "paginas": 459,
+    "editorial": "Plaza Janes",
+    "idioma": "español"
+  },
+  {
+    "nombre": "Catch 22",
+    "autor": "Joseph Heller",
+    "genero": "novela",
+    "paginas": 463,
+    "editorial": "Dell Editions",
+    "idioma": "ingles"
+  },
+  {
+    "nombre": "Stardust",
+    "autor": "Neil Gaiman",
+    "genero": "fantasia",
+    "paginas": 207,
+    "editorial": "Norma Editorial",
+    "idioma": "español"
+  }
+]
