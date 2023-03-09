@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import { Auto } from './auto'
 const garage = 'garage.json';
 
-export class gestorAutos{
+export class GestorAutos{
     private cars: Auto[] = [];
     constructor(cars: Auto[]){
         this.cars = cars;
@@ -47,7 +47,7 @@ export class gestorAutos{
 
 }
 //* lee el archivo, parsea su contenido como un objeto JSON y devuelve un arreglo de objetos Auto creados a partir de los datos del archivo.
-function getCars(cars: string){
+export function getCars(cars: string){
     try {
         const data = JSON.parse(fs.readFileSync(garage, 'utf8'));
         const carLot = data.map((data: any) => new Auto(data.manufactorer, data.model, data.year, data.color, data.patente, data.speed, data.radio, data.volume, data.isOn));
@@ -57,12 +57,3 @@ function getCars(cars: string){
         return [];
     }
 }
-
-const carList = getCars('garage');
-
-const gestor =  new gestorAutos(carList);
-// gestor.addCars('Dodge', 'Charger', 1963, 'Naranja', 'GRA L01',0, false, 11, false);
-// gestor.modifyCar('tbc 710', new Auto('Chevrolet','Corsa', 2005,'Azul','tbc 710', 0, false, 11, false));
-gestor.getCar('tbc 710');
-// gestor.deleteCar('GRA L01');
-console.table(carList)
