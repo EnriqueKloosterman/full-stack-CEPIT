@@ -1,0 +1,14 @@
+import MiembroClub from "./AbstractMiembroCLub";
+
+export enum Deporte{
+    futbol, basquet, zumba, voley, natacion, gym
+}
+
+export class Jugador extends MiembroClub{
+    deporte: Deporte;
+
+    constructor(nombre: string, apellido: string, fechaNacimiento: string, documento: number, telefono: number, deporte: Deporte){
+        super(nombre, apellido, fechaNacimiento, documento, telefono)
+        this.deporte = deporte;
+    }
+}

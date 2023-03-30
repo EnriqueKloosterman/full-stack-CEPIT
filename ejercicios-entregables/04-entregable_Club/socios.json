@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "CLARK",
+    "apellido": "KENT",
+    "fechaNacimiento": "9/4/1938, 00:00:00",
+    "documento": "2",
+    "telefono": "88",
+    "miembroDesde": "30/3/2023, 16:45:30",
+    "deporte": 0
+  },
+  {
+    "nombre": "BRUCE",
+    "apellido": "WAYNE",
+    "fechaNacimiento": "18/5/1939, 00:00:00",
+    "documento": "1",
+    "telefono": "77",
+    "miembroDesde": "30/3/2023, 16:46:08",
+    "deporte": 3
+  }
+]
