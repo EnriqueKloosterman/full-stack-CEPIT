@@ -30,24 +30,24 @@ export class GestorClub{
 
     }
     buscarPorNombre(nombre: string){
-        const nombreSocio = this.data().find((socio: {nombre: string}) => socio.nombre === nombre.toUpperCase())
+        const nombreSocio = this.data().filter((socio: {nombre: string}) => socio.nombre === nombre.toUpperCase())
         console.log(nombreSocio);
         return nombreSocio;
         
     }
     buscarPorApellido(apellido: string){
-        const apellidoSocio = this.data().find((socio: {apellido: string}) => socio.apellido === apellido.toUpperCase())
+        const apellidoSocio = this.data().filter((socio: {apellido: string}) => socio.apellido === apellido.toUpperCase())
         console.log(apellidoSocio);
         return apellidoSocio;
         
     }
     buscarPorDocumento(documento: string){
-        const documentoSocio = this.data().find((socio: {documento: string}) => socio.documento === documento)
+        const documentoSocio = this.data().filter((socio: {documento: string}) => socio.documento === documento)
         console.log(documentoSocio);
         return documentoSocio;
     }
     buscarPorTelefono(telefono: string){
-        const telefonoSocio = this.data().find((socio: {telefono: string}) => socio.telefono === telefono)
+        const telefonoSocio = this.data().filter((socio: {telefono: string}) => socio.telefono === telefono)
         console.log(telefonoSocio);
         return telefonoSocio;
     }
