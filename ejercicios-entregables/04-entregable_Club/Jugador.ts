@@ -1,4 +1,4 @@
-import MiembroClub from "./AbstractMiembroCLub";
+import MiembroClub from "./AbstractMiembroClub";
 
 export enum Deporte{
     futbol, basquet, zumba, voley, natacion, gym
