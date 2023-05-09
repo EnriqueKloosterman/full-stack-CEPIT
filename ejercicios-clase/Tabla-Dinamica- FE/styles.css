@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: solid 1px black;
+    width: 70%;
+}
+thead{
+    background-color: antiquewhite;
+}
+thead th{
+    border: solid 1px;
+    padding: 5px;
+}
+tbody tr{
+    background-color: cornsilk;
+    border: solid 1px black;   
+    text-align: center;
+}
+tbody td{
+    padding: 5px;
+    border: solid 1px black;
+}
+
