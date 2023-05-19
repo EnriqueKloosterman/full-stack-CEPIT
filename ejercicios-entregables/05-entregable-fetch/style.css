@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/** imgen de fondo */
 #background{
     /* background-image: url('https://media.tenor.com/R4_sUN8G5uYAAAAd/rick-and-morty.gif'); */
     /* background-image: url('https://i.pinimg.com/originals/f8/46/ff/f846ff732d55b7ac19d34009ab4a3606.gif'); */
@@ -17,7 +18,7 @@
     z-index: -1;
     opacity: 0.8;
 }
-
+/**  logo de la pagina */
 figure{
     display: flex;
     justify-content: center;
@@ -28,12 +29,13 @@ figure{
     margin: 1%;
 
 }
-
+/** contenedor de las cards */
 #container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+/** card de los personajes */
 .card{
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +81,7 @@ p{
         0, 0, 12px #d0e0f3;
 }
 
-
+/** animación del borde de las cards */
 @keyframes rotate {
     to {
         --angle: 360deg;

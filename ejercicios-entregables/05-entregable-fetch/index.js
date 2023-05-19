@@ -2,6 +2,7 @@ const container = document.createElement('div');
 container.id = 'container';
 document.body.appendChild(container);
 
+//? obtenemos la información de la API
 function fetchData(){
     return new Promise((resolve, reject) =>{
         fetch('https://rickandmortyapi.com/api/character')
@@ -15,6 +16,7 @@ function fetchData(){
     })
 }
 
+//? creamos la estructura de la lista
 function characterCards(){
     fetchData()
     .then(data => {
@@ -45,7 +47,6 @@ function characterCards(){
             info.appendChild(origin);
             info.appendChild(gender);
 
-            // const container = document.getElementById('container');
             container.appendChild(card);
 ;
 
