@@ -44,7 +44,7 @@ figure{
     padding: 2%;
     /* border: solid 1px crimson; */
     margin: 1%;
-    background-color: rgba(112, 128, 144, 0.5);
+    background-color: rgba(22, 53, 85, 0.5);
 
     --angle: 0deg;
 	border: 6px solid;
@@ -74,11 +74,13 @@ figure{
 }
 h2{
     text-align: center;
+    color: whitesmoke;
+    text-shadow: #000000 4px 0 10px;
+
 }
 p{
-    text-shadow: 0, 0, 5px #d0e0f3,
-        0, 0, 8px #d0e0f3,
-        0, 0, 12px #d0e0f3;
+    color: whitesmoke;
+    text-shadow: #000000 3px 0 10px;
 }
 
 /** animación del borde de las cards */

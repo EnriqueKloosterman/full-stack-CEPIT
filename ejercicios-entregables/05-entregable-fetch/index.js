@@ -42,10 +42,10 @@ function characterCards(){
             card.appendChild(img);
             card.appendChild(info);
             info.appendChild(h2);
-            info.appendChild(status);
             info.appendChild(species);
-            info.appendChild(origin);
             info.appendChild(gender);
+            info.appendChild(status);
+            info.appendChild(origin);
 
             container.appendChild(card);
 ;
