@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#background{
+    /* background-image: url('https://media.tenor.com/R4_sUN8G5uYAAAAd/rick-and-morty.gif'); */
+    /* background-image: url('https://i.pinimg.com/originals/f8/46/ff/f846ff732d55b7ac19d34009ab4a3606.gif'); */
+    /* background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1770453485893246977/FA4026EBB255ACE569504E4EB81645214FDF1CE7/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'); */
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1714169669744769658/F652EC51D44D6D8B739973059761498D73EC5944/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    margin: 1%;
+
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 23%;
+    padding: 2%;
+    /* border: solid 1px crimson; */
+    margin: 1%;
+    background-color: rgba(112, 128, 144, 0.5);
+
+    --angle: 0deg;
+	border: 6px solid;
+    border-image: linear-gradient(var(--angle), #b2e2e9, #9eb3ee, #d0e0f3, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 1;
+    width:23%;  
+    animation: 5s rotate linear infinite;
+    border-radius: 4px;
+    /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5); */
+    box-shadow: 0px 0px 8px #fff;
+
+    /* box-shadow: 3px 3px rgb(200, 230, 255), -1em 0 .4em rgb(164, 231, 248); */
+}
+
+.cardImg{
+    display: flex;
+    justify-self: center;
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #fff;
+}
+.info{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-shadow: 0, 0, 5px #d0e0f3,
+        0, 0, 8px #d0e0f3,
+        0, 0, 12px #d0e0f3;
+}
+
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+        }
+    }
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }

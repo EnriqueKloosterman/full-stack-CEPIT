@@ -4,7 +4,7 @@ const users =  JSON.parse(data);
 
 const table = document.getElementById('table');
 users.forEach(element => {
-    const file = document.createElement('tr');
+    const row = document.createElement('tr');
     const cellName = document.createElement('td');
     const cellLastName = document.createElement('td');
     const cellCity = document.createElement('td');
@@ -18,13 +18,15 @@ users.forEach(element => {
     cellCity.innerHTML = element.location.city;
     cellImg.appendChild(img) ;
 
-    file.appendChild(cellName);
-    file.appendChild(cellLastName);
-    file.appendChild(cellCity);
-    file.appendChild(cellImg);
+    row.appendChild(cellName);
+    row.appendChild(cellLastName);
+    row.appendChild(cellCity);
+    row.appendChild(cellImg);
 
-    table.querySelector('tbody').appendChild(file);
+    table.querySelector('tbody').appendChild(row);
 });
+
+
 
 
 
