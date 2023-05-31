@@ -53,6 +53,8 @@
     border-radius: 8px;
     margin: 5px 0;
     border: none;
+    font-size: 12px;
+    font-weight: bold;
 }
 .card-Container{
     width: 80%;
@@ -75,7 +77,6 @@
     margin: 2% 0;
     padding: 2%;
     border-radius: 8px;
-    background-color: #c0c0c0;
 }
 .card:hover{
     transform: scale(1.1)
@@ -84,10 +85,11 @@
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-self: center;
     justify-content: center;
-    /* background-color: antiquewhite; */
-    /* border-radius: 50%; */
+    background-color: antiquewhite;
+    border-radius: 50%;
+    padding: 2%;
 }
 
 .img-container img{
@@ -95,6 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    filter: drop-shadow(0 0 4px #ffffff);
 }
 .info{
     padding: 2%;
@@ -125,7 +128,6 @@
 
 .grass{
     background-color: #659b65;
-    filter: drop-shadow(0 0 5px #659b65);
 }
 
 .poison{
@@ -181,4 +183,22 @@
 }
 
 
+.modal .img-container{
+    width: 60%;
+    align-self: center;
+    margin-top: 3%;
+}
+.modal .info{
+    width: 85%;
+    align-self: center;
+}
+.modal .btn-group{
+    width: 85%;
+    align-self: center;
+    padding: 3%;
+    gap: 5%;
+}
 
+.modal .btn{
+    border-radius: 8px;
+}
