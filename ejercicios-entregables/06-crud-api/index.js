@@ -60,34 +60,6 @@ function addUser() {
         });
 }
 
-// function addUser() {
-//     const nameInput = document.getElementById("name");
-//     const emailInput = document.getElementById("email");
-//     const phoneInput = document.getElementById("phone");
-
-//     const newUser = {
-//         name: nameInput.value,
-//         email: emailInput.value,
-//         phone: phoneInput.value,
-//     };
-
-//     fetch(apiUrl, {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(newUser),
-//     })
-//         .then((response) => response.json())
-//         .then((data) => {
-//             nameInput.value = "";
-//             emailInput.value = "";
-//             phoneInput.value = "";
-//             closeModal();
-//             fetchUsers();
-//         });
-// }
-
 function delteUser(userId) {
     const confirmDelete = confirm(
         "¿Estás seguro de que deseas eliminar este usuario?"
