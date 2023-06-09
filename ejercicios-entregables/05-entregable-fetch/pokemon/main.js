@@ -44,7 +44,7 @@ const showPokedex = (pokemon) => {
         card.addEventListener('click', () => {
             const pokemonId = card.getAttribute('data-pokemon-id');
             openModal(pokemonId);
-          });
+        });
         const imgContainer = document.createElement('div');
         imgContainer.classList = 'img-container';
         imgContainer.classList.add(data.types[0]);
@@ -71,6 +71,7 @@ const showPokedex = (pokemon) => {
         cardContainer.appendChild(card);
     });
 };
+
 const btnId = document.getElementById('show-all')
 btnId.addEventListener('click', () => {
     showPokedex(pokemon);
@@ -80,6 +81,7 @@ card.forEach(card => {
     card.addEventListener('click', () => {      
     })
 })
+
 function openModal(pokemonId) {
     const modalContent = document.querySelector('.modal-content');
     const selectedPokemon = pokemon[pokemonId];
