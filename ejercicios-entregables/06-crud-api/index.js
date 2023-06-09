@@ -25,8 +25,8 @@ function showUsers(users) {
             <td>${user.email}</td>
             <td>${user.phone}</td> 
             <td>
-                <button onclick="openModal('${user.id}')">Editar</button>
-                <button onclick="delteUser('${user.id}')">Eliminar</button>
+                <button onclick="openModal('${user.id}')">🧾✏</button>
+                <button onclick="delteUser('${user.id}')">❌</button>
             </td>
         `;
         tableBody.appendChild(row);

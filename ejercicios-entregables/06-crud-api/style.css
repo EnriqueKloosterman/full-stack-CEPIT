@@ -1,3 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos del header */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2%;
+}
+
+header .title{
+    width: 100%;
+}
+
+header .elements{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .elements .search-bar{
+    width: 50%;
+}
+header .elements .search-bar input{
+    padding: 10px;
+    border-radius: 6px;
+}
+header .elements .create-user{
+    width: 50%;
+}
+
+header .elements .create-user button{
+    padding: 12px;
+    background-color: #2f9e33;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: #000000 0 0 5px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -15,7 +61,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #dbd9d9;
 }
 
 /* Estilos para el modal */
@@ -28,7 +74,7 @@ tr:nth-child(even) {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
