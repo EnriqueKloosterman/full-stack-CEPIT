@@ -2,6 +2,8 @@
 const apiUrl = "https://647a6c3fd2e5b6101db057b6.mockapi.io/users";
 let userIdToEdit = "";
 let pagination;
+const delImg = "./img/bin.png";
+const editImg = "./img/drawing.png";
 
 function fetchUsers() {
     fetch(apiUrl)
@@ -25,8 +27,9 @@ function showUsers(users) {
             <td>${user.email}</td>
             <td>${user.phone}</td> 
             <td>
-                <button onclick="openModal('${user.id}')">🧾✏</button>
-                <button onclick="delteUser('${user.id}')">❌</button>
+                <button onclick="openModal('${user.id}')"><img src="${editImg}" alt="edit" class="action-btn-img"></button>
+                <button onclick="delteUser('${user.id}')"><img src="${delImg}" alt="edit" class="action-btn-img"></button>
+
             </td>
         `;
         tableBody.appendChild(row);
@@ -179,10 +182,5 @@ function showPagination() {
         paginationContainer.appendChild(button);
     }
 }
-
-
-const closeBtn = document.querySelector(".close");
-closeBtn.addEventListener("click", closeModal);
-
 
 fetchUsers();

@@ -11,72 +11,76 @@
 </head>
 
 <body>
-    <header>
-        <h2 class="title">CRUD API</h2>
-        <div class="elements">
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Buscar por nombre" onkeyup="searchUsers()">
+    <div class="main-container">
+
+        <header>
+            <h2 class="title">CRUD API</h2>
+            <div class="elements">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Buscar por nombre" onkeyup="searchUsers()">
+                </div>
+                <div class="create-user">
+                    <button onclick="createUser()">Crear usuario</button>
+                </div>
             </div>
-            <div class="create-user">
-                <button onclick="createUser()">Crear usuario</button>
-            </div>
+        </header>
+
+        <div class="table-container">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Telefono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
-    </header>
 
-
-    <table id="userTable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Telefono</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-
-    <!-- <h2>Agregar Usuario</h2>
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email"><br><br>
-    <label for="phone">Telefono:</label>
-    <input type="text" id="phone" name="phone"><br><br>
-    <button onclick="addUser()">Agregar</button> -->
-
-    <!-- ? Paginación -->
-    <div id="pagination" class="pagination"></div>
-
-    <!-- ? Create User Modal -->
-    <div id="createUserModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Crear Usuario</h2>
+        <!-- <h2>Agregar Usuario</h2>
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="email">Email:</label>
             <input type="text" id="email" name="email"><br><br>
             <label for="phone">Telefono:</label>
             <input type="text" id="phone" name="phone"><br><br>
-            <button onclick="addUser()">Agregar</button>
-        </div>
-    </div>
+            <button onclick="addUser()">Agregar</button> -->
 
-    <!-- ? Modal -->
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Editar Usuario</h2>
-            <label for="editName">Nombre:</label>
-            <input type="text" id="editName" name="editName"><br><br>
-            <label for="editEmail">Email:</label>
-            <input type="text" id="editEmail" name="editEmail"><br><br>
-            <label for="editPhone">Telefono</label>
-            <input type="text" id="editPhone" name="editPhone"><br><br>
-            <button onclick="storeChanges()">Guardar</button>
+        <!-- ? Paginación -->
+        <div id="pagination" class="pagination"></div>
+
+        <!-- ? Create User Modal -->
+        <div id="createUserModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Crear Usuario</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="phone">Telefono:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+                <button onclick="addUser()" class="modal-btn">Agregar</button>
+            </div>
+        </div>
+
+        <!-- ? Modal -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Editar Usuario</h2>
+                <label for="editName">Nombre:</label>
+                <input type="text" id="editName" name="editName"><br><br>
+                <label for="editEmail">Email:</label>
+                <input type="text" id="editEmail" name="editEmail"><br><br>
+                <label for="editPhone">Telefono</label>
+                <input type="text" id="editPhone" name="editPhone"><br><br>
+                <button onclick="storeChanges()" class="modal-btn">Guardar</button>
+            </div>
         </div>
     </div>
 </body>
