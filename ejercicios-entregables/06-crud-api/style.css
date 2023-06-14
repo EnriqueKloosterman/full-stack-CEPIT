@@ -27,8 +27,6 @@ header .title{
     width: 100%;
     font-size: 4rem; 
 }
-header .title h2{
-}
 
 header .elements{
     display: flex;
@@ -52,7 +50,6 @@ header .elements .create-user button{
     background-color: #2f9e33;
     color: #ffffff;
     font-weight: bold;
-    /* text-shadow: #000000 0 0 5px; */
     border: none;
     border-radius: 6px;
     font-size: 1rem;
@@ -61,8 +58,6 @@ header .elements .create-user button{
 /*  Estilos de la tabla */
 .table-container{
     width: 90%;
-    /* display: flex;
-    align-content: center; */
 }
 
 table {
@@ -78,7 +73,7 @@ td {
 
 th {
     background-color: #4CAF50;
-    color: white;
+    color: #ffffff;
 }
 
 tr:nth-child(even) {
@@ -100,7 +95,7 @@ tr:nth-child(even) {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -123,7 +118,7 @@ tr:nth-child(even) {
 }
 
 .modal-content .modal-btn{
-    width: 15%;
+    width: 9%;
     padding: 10px;
     border-radius: 6px;
     border: none;

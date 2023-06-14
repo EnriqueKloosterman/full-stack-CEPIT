@@ -9,9 +9,11 @@ function fetchUsers() {
     fetch(apiUrl)
         .then((response) => response.json())
         .then((data) => {
-            pagination = new Pagination(data, 20);
-            showUsers(pagination.getCurrentPageData());
-            showPagination();
+            const itemsPerPage = 20;
+            const currentPage = 1;
+            const currentPageData = goToPage(data, itemsPerPage, currentPage);
+            showUsers(currentPageData);
+            showPagination(data, itemsPerPage, currentPage);
         });
 }
 
@@ -156,31 +158,34 @@ function searchUsers() {
                 return userName.includes(searchTerm);
             });
 
-            pagination = new Pagination(filteredUsers, 20);
-            showUsers(pagination.getCurrentPageData());
-            showPagination();
+            const itemsPerPage = 20;
+            const currentPage = 1;
+            const currentPageData = goToPage(filteredUsers, itemsPerPage, currentPage);
+            showUsers(currentPageData);
+            showPagination(filteredUsers, itemsPerPage, currentPage);
         });
 }
 
-function showPagination() {
+function showPagination(data, itemsPerPage, currentPage) {
     const paginationContainer = document.getElementById("pagination");
-    const totalPages = pagination.getTotalPages();
-
+    const totalPages = Math.ceil(data.length / itemsPerPage);
+  
     paginationContainer.innerHTML = "";
-
+  
     for (let i = 1; i <= totalPages; i++) {
-        const button = document.createElement("button");
-        button.textContent = i;
-        if (i === pagination.currentPage) {
-            button.classList.add("active");
-        }
-        button.addEventListener("click", () => {
-            const users = pagination.goToPage(i);
-            showUsers(users);
-            showPagination();
-        });
-        paginationContainer.appendChild(button);
+      const button = document.createElement("button");
+      button.textContent = i;
+      if (i === currentPage) {
+        button.classList.add("active");
+      }
+      button.addEventListener("click", () => {
+        const users = goToPage(data, itemsPerPage, i);
+        showUsers(users);
+        showPagination(data, itemsPerPage, i);
+      });
+      paginationContainer.appendChild(button);
     }
-}
+  }
+  
 
 fetchUsers();
